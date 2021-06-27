@@ -1,0 +1,241 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+nav {
+  background-color: black;
+  line-height: 60px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+.logo {
+  text-align: center;
+  margin-left: 0.8em;
+  color: aqua;
+}
+
+.logo span {
+  color: white;
+}
+
+.profile {
+  margin-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(252, 252, 252, 0.925);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  line-height: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile .text {
+  text-align: center;
+  margin-top: 3em;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .text .social {
+  margin-top: 3em;
+  display: inline;
+  font-size: 20px;
+}
+
+.profile .text .social a {
+  color: #6c7af3;
+}
+
+.profile .image img {
+  margin-top: 1em;
+  margin-left: 5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50em;
+}
+
+.aboutus {
+  background: black;
+  color: white;
+  line-height: 50px;
+  margin-top: 1em;
+}
+
+.aboutus .title {
+  margin-left: 3em;
+}
+
+.aboutus .text {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.aboutus .text p {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
+.technology {
+  background: black;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 40px;
+  margin-top: 1em;
+}
+
+.technology .title {
+  margin-left: 3em;
+}
+
+.technology .workingModes {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  background-color: #fff;
+  margin-top: 1em;
+}
+
+.technology .workingModes .employe {
+  display: inline-block;
+}
+
+.technology .workingModes .employe a {
+  text-decoration: none;
+}
+
+.technology .workingModes .employe a:hover {
+  color: green;
+}
+
+.technology .workingModes div:not(:last-child) {
+  border-bottom: dashed 1px #000;
+}
+
+.recentProjects {
+  margin: 0;
+  background: black;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 50px;
+  margin-top: 1em;
+}
+
+.recentProjects .title {
+  margin-left: 3em;
+}
+
+.recentProjects .project {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.recentProjects .project .title {
+  color: black;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
+.recentProjects .project img {
+  margin-top: 2em;
+  width: 200px;
+}
+
+.recentProjects .project img:hover {
+  -webkit-transform: rotate(260deg);
+          transform: rotate(260deg);
+}
+
+.information {
+  margin: 0;
+  background: black;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 50px;
+  margin-top: 1em;
+}
+
+.information .title {
+  margin-left: 3em;
+}
+
+.information .content {
+  background-color: #fff;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.information i {
+  margin-right: 1em;
+}
+
+.information ul li {
+  list-style: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 40px;
+  margin-top: 1em;
+}
+/*# sourceMappingURL=style.css.map */

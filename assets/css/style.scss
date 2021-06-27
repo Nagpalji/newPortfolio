@@ -1,0 +1,187 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    
+}
+
+
+.container{
+    display: flex;
+    position: relative;
+    
+}
+nav{
+    background-color: black;
+    line-height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom:0;
+}
+
+
+.logo{
+    text-align: center;
+    margin-left: 0.8em;
+    color: aqua;
+    span{
+        color:white
+    }
+}
+
+.profile{
+    margin-top: 1em;
+    display: grid;
+    justify-content:center;
+    background-color: rgba(252, 252, 252, 0.925);
+    grid-template-columns: repeat(2,1fr);
+    line-height: 50px;
+    justify-content: space-between;
+    .text{
+        text-align:center;
+        margin-top:3em;
+        color:black;
+        align-items: center;
+        justify-content: center;
+        .social{
+            margin-top: 3em;
+            display: inline;
+            font-size:20px;
+            a{
+                color:rgb(108, 122, 243);
+            }
+        }
+    }
+    
+    .image img{
+        margin-top: 1em;
+        margin-left: 5em;
+        justify-content: center;
+        border-radius: 50em;
+    }
+}
+
+.aboutus{
+    background: black;
+    color: white;
+    line-height:50px;
+    margin-top:1em;
+    .title{
+        margin-left: 3em;
+    }
+    .text{
+        background-color: white;
+        color: black;
+        text-align: center;
+        p{
+            text-align: center;
+            display: flex;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            overflow: hidden;
+        }
+    }
+}
+
+.technology{
+    background: black;
+    color: white;
+    align-items: center;
+    line-height:40px;
+    margin-top:1em;
+    .title{
+        margin-left: 3em;
+    }
+    .workingModes{
+        text-align: center;
+        font-weight: bold;
+        font-size:14px;
+        color:black;
+        background-color: #fff;
+        margin-top: 1em;
+        .employe{
+            display: inline-block;
+            a{
+                text-decoration: none;
+                &:hover{
+                    color:green
+                }
+            }
+        }
+        div:not(:last-child){
+            border-bottom: dashed 1px #000;
+        }
+        
+    }
+}
+
+.recentProjects{
+    margin: 0;
+    background: black;
+    color: white;
+    align-items: center;
+    line-height:50px;
+    margin-top:1em;
+    .title{
+        margin-left: 3em;
+    }
+    .project{
+        background-color:rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        margin-bottom: 1px;
+        
+        .title{
+            color:black;
+            text-align: center;
+            display: flex;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            overflow: hidden;
+        }
+        img{
+            margin-top: 2em;
+            width:200px;
+            &:hover{
+                transform: rotate(260deg);    
+            }
+        }
+    }
+}
+
+.information{
+    margin: 0;
+    background: black;
+    color: white;
+
+    align-items: center;
+    line-height:50px;
+    margin-top:1em;
+    .title{
+        margin-left: 3em;
+    }
+    
+    .content{
+        background-color: #fff;
+        color:#000;
+        display: flex;
+    }
+    i{
+        margin-right: 1em;
+    }
+    ul li{
+        list-style: none;
+    }
+}
+
+footer{
+    display: flex;
+    background: black;
+    color: white;
+    align-items: center;
+    line-height:40px;
+    margin-top:1em;
+}
